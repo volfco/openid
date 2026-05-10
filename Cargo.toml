@@ -30,7 +30,7 @@ features = ["all"]
 [dependencies]
 serde_json = { version = "1", default-features = false }
 base64 = "0.22"
-biscuit = { git = "git@github.com:volfco/biscuit.git" }
+biscuit = { git = "https://github.com/volfco/biscuit.git" }
 thiserror = "2"
 validator = { version = "0.20", features = ["derive"] }
 mime = "0.3"
