@@ -22,7 +22,7 @@ uma2 = []
 native-tls = ["reqwest/native-tls"]
 rustls = ["reqwest/rustls"]
 http2 = ["reqwest/http2"]
-wasm_js = ["getrandom/wasm_js"]
+wasm_js = ["getrandom/wasm_js", "biscuit/wasm_js"]
 
 [package.metadata.docs.rs]
 features = ["all"]
@@ -30,7 +30,7 @@ features = ["all"]
 [dependencies]
 serde_json = { version = "1", default-features = false }
 base64 = "0.22"
-biscuit = "0.7"
+biscuit = { git = "git@github.com:volfco/biscuit.git" }
 thiserror = "2"
 validator = { version = "0.20", features = ["derive"] }
 mime = "0.3"
